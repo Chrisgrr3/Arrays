@@ -24,6 +24,15 @@ public class DVDTest {
             int square = (i + 1) * (i + 1);
             squareNumbers[i] = square;
         }
+
+        // Printing the values for each index of the array
+        for (int i = 0; i < 10; i++) {
+            System.out.println(squareNumbers[i]);
+        }
+
+        for (int square: squareNumbers) {
+            System.out.println(square);
+        }
     }
 }
 
