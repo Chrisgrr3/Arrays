@@ -1,5 +1,5 @@
 const nums1 = [1,2,3];
-const nums2 = [2,5,6];
+const nums2 = [2,5,6,8];
 
 var mergeSorted = (f,s) => {
     let newArr = [];
