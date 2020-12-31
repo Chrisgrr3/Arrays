@@ -1,14 +1,14 @@
 var moveZeroes = nums => {
     let length = nums.length;
-    let zeroes = 0;
+    let nonZero = 0;
     for(let i = 0; i < length; i++) {
-        if(nums[i] == 0) {
-            zeroes++;
-            for(let j = i + 1; j < length - zeroes; j++) {
-                nums[j-1] = nums[j];
-            }
-            nums.push(0);
+        if(nums[i] != 0) {
+            nums[nonZero] = nums[i];
+            nonZero++;
         }
+    }
+    for(let j = nonZero; j < length; j++) {
+        nums[j] = 0;
     }
     return nums;
 }
